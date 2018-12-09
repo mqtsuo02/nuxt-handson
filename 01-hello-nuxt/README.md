@@ -89,8 +89,8 @@ $ npm start
 
 ## ブラウザで確認
 
-- Webブラウザで「http://localhost:3000」にアクセスしてみましょう。
-- 「Hello, Nuxt !!」と表示されていればOKです。
+- Webブラウザで「 http://localhost:3000 」にアクセスしてみましょう。
+- 「Hello, Nuxt !!」と表示されていればOKです。
 
 
 ## (再) 学習のポイント
