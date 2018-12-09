@@ -21,6 +21,7 @@
 
 |||
 |:---|:---|
+|Vetur|Vue.jsのシンタックスハイライト|
 |Prettier - Code formatter|JSコードの自動整形ツール|
 
 setting.jsonで以下を追加
