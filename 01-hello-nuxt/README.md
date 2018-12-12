@@ -3,7 +3,7 @@
 
 ## やること
 
-ゼロの状態からNuxt.jsをインストールして、「Hello, Nuxt !!」と表示してみましょう。
+ゼロの状態からNuxt.jsをインストールして、「Hello, Nuxt!!」と表示してみましょう。
 
 
 ## 学習のポイント
@@ -27,7 +27,7 @@
 
 ## ディレクトリの作成
 
-- ホーム直下に「hello-nuxt」というディレクトリを作成してください。
+- ホーム直下に`hello-nuxt`というディレクトリを作成してください。
 
 ```sh
 $ cd ~
@@ -38,7 +38,8 @@ $ cd hello-nuxt
 
 ## package.jsonの作成
 
-- 「hello-nuxt」ディレクトリ直下に、「package.json」を作成し、以下の内容を書いて保存してください。
+- `hello-nuxt`ディレクトリ直下に、`package.json`を作成し、以下の内容を書いて保存してください。
+- `npm start`で`node_modules/.bin/nuxt`が実行されるようにスクリプトを定義します。
 
 ```json
 {
@@ -52,7 +53,7 @@ $ cd hello-nuxt
 
 ## Nuxt.jsのインストール
 
-- 「hello-nuxt」ディレクトリ直下で、以下を実行してください。
+- `hello-nuxt`ディレクトリ直下で、以下を実行してください。
 
 ```sh
 $ npm install --save nuxt
@@ -61,7 +62,7 @@ $ npm install --save nuxt
 
 ## pagesディレクトリの作成
 
-- 「hello-nuxt」ディレクトリ直下に、「pages」ディレクトリを作成してください。
+- `hello-nuxt`ディレクトリ直下に、`pages`ディレクトリを作成してください。
 
 ```sh
 $ mkdir pages
@@ -70,18 +71,18 @@ $ mkdir pages
 
 ## index.vueの作成
 
-- 「pages」ディレクトリ直下に「index.vue」を作成し、以下の内容を書いて保存してください。
+- `pages`ディレクトリ直下に`index.vue`を作成し、以下の内容を書いて保存してください。
 
 ```html
 <template>
-  <h1>Hello,Nuxt !!</h1>
+  <h1>Hello, Nuxt!!</h1>
 </template>
 ```
 
 
 ## 開発サーバの起動
 
-- 「hello-nuxt」ディレクトリ直下で、以下を実行してください。
+- `hello-nuxt`ディレクトリ直下で、以下を実行してください。
 
 ```sh
 $ npm start
@@ -90,13 +91,13 @@ $ npm start
 
 ## ブラウザで確認
 
-- Webブラウザで「 http://localhost:3000 」にアクセスしてみましょう。
-- 「Hello, Nuxt !!」と表示されていればOKです。
+- Web ブラウザで `http://localhost:3000` にアクセスしてみましょう。
+- 「Hello, Nuxt!!」と表示されていればOKです。
 
 
 ## ホットリロードの確認
 
-- 「index.vue」内のテキストを変更すると、自動的にビルドされWebブラウザに反映されます。
+- `index.vue`内のテキストを変更すると、自動的にビルドされ Webブラウザに反映されます。
 
 
 ## (再) 学習のポイント
