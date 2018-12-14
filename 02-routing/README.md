@@ -8,9 +8,9 @@ Nuxt.jsのルーティング機能を使って、画面遷移を実装してみ�
 
 ## 学習のポイント
 
-- [] aaa
-- [] bbb
-- [] ccc
+- [ ] aaa
+- [ ] bbb
+- [ ] ccc
 
 
 ## 手順
@@ -255,6 +255,6 @@ export default {
 
 ## 学習のポイント
 
-- [] aaa
-- [] bbb
-- [] ccc
+- [ ] aaa
+- [ ] bbb
+- [ ] ccc

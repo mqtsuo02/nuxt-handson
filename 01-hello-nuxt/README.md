@@ -8,14 +8,14 @@
 
 ## 学習のポイント
 
-- [] aaa
-- [] bbb
-- [] ccc
+- [ ] aaa
+- [ ] bbb
+- [ ] ccc
 
 
 ## 手順
 
-1. [ディレクトリの作成](#ディレクトリの作成)
+1. [作業用ディレクトリの作成](#作業用ディレクトリの作成)
 2. [package.jsonの作成](#package.jsonの作成)
 3. [Nuxt.jsのインストール](#Nuxt.jsのインストール)
 4. [pagesディレクトリの作成](#pagesディレクトリの作成)
@@ -25,9 +25,10 @@
 8. [ホットリロードの確認](#ホットリロードの確認)
 
 
-## ディレクトリの作成
+## 作業用ディレクトリの作成
 
-- ホーム直下に`hello-nuxt`というディレクトリを作成してください。
+- 作業用のディレクトリを作成してください。
+- 例では、ホーム直下に`hello-nuxt`というディレクトリを作成します。
 
 ```sh
 $ cd ~
@@ -38,12 +39,15 @@ $ cd hello-nuxt
 
 ## package.jsonの作成
 
-- `hello-nuxt`ディレクトリ直下に、`package.json`を作成し、以下の内容を書いて保存してください。
+- 作業ディレクトリ直下に、`package.json`を作成し、以下の内容を書いて保存してください。
 - `npm start`で`node_modules/.bin/nuxt`が実行されるようにスクリプトを定義します。
 
 ```json
 {
   "name": "hello-nuxt",
+  "dependencies": {
+    "nuxt": "2.3.4"
+  },
   "scripts": {
     "start": "nuxt"
   }
@@ -53,16 +57,17 @@ $ cd hello-nuxt
 
 ## Nuxt.jsのインストール
 
-- `hello-nuxt`ディレクトリ直下で、以下を実行してください。
+- 作業用ディレクトリ直下で、以下を実行してください。
+- `package.json`に従ってNuxt.jsがインストールされます。
 
 ```sh
-$ npm install --save nuxt
+$ npm install
 ```
 
 
 ## pagesディレクトリの作成
 
-- `hello-nuxt`ディレクトリ直下に、`pages`ディレクトリを作成してください。
+- 作業用ディレクトリ直下に、`pages`ディレクトリを作成してください。
 
 ```sh
 $ mkdir pages
@@ -82,7 +87,7 @@ $ mkdir pages
 
 ## 開発サーバの起動
 
-- `hello-nuxt`ディレクトリ直下で、以下を実行してください。
+- 作業用ディレクトリ直下で、以下を実行してください。
 
 ```sh
 $ npm start
@@ -102,6 +107,6 @@ $ npm start
 
 ## (再) 学習のポイント
 
-- [] aaa
-- [] bbb
-- [] ccc
+- [ ] aaa
+- [ ] bbb
+- [ ] ccc

@@ -13,5 +13,6 @@
 ## Contens
 
 - [00-setup](./00-setup/README.md)
-- [01-hello-nuxt](./01-hello-nuxt/REAMDE.md)
+- [01-hello-nuxt](./01-hello-nuxt/README.md)
 - [02-routing](./02-routing/README.md)
+- [03-vuetify](./03-vuetify/README.md)
