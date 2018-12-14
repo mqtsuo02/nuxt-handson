@@ -45,7 +45,7 @@ Nuxt.jsのルーティング機能を使って、画面遷移を実装してみ�
 - 初期表示は`ホーム`
 - メニューから`ホーム`と`アイテム一覧`に遷移可能
 - `アイテム一覧`で任意のアイテムを押すと`アイテム詳細`に遷移
-- `アイテム一覧`で新規作成を押すと`アイテム新規作成`に遷移
+- `アイテム一覧`で追加を押すと`アイテム新規作成`に遷移
 
 
 ### Itemオブジェクトのプロパティ
@@ -57,7 +57,6 @@ Itemは以下のプロパティを持ちます。
 |id|Number|
 |name|String|
 |price|Number|
-|description|String|
 
 
 ## vueファイルの作成
@@ -90,7 +89,9 @@ Itemは以下のプロパティを持ちます。
 </template>
 ```
 
-- ファイルを作成すると、Webブラウザから以下のURLでアクセスできるようになります。
+### ここまで実装できたら
+
+- Webブラウザから以下のURLでアクセスできることを確認してください。
 - `/items/1`のidにあたる部分は、何を入れても動的にルーティングされます。(`new`の場合を除く)
 
 `http://localhost:3000/items`  
@@ -112,8 +113,8 @@ Itemは以下のプロパティを持ちます。
 <template>
   <div>
     <ul>
-      <li><router-link to="/">ホーム</router-link></li>
-      <li><router-link to="/items">アイテム一覧</router-link></li>
+      <li><router-link to="/">HOME</router-link></li>
+      <li><router-link to="/items">ITEMS</router-link></li>
     </ul>
     <hr />
   </div>
@@ -126,6 +127,7 @@ Itemは以下のプロパティを持ちます。
 - 作成したコンポーネントを全てのページに組み込むために、レイアウトファイルを実装します。
 - `/layouts/default.vue`ファイルを作成してください。
 - `script`タグで`MenuList`コンポーネントを読み込みます。
+- templateでは`menu-list`のようにケバブケースにします。
 - 各ページを挿入したい部分に`nuxt`タグを書きます。
 
 **/layouts/default.vue**
@@ -147,17 +149,112 @@ export default {
 </script>
 ```
 
-ここまで実装できたら、各ページでメニューが表示されていることを確認してください。
+### ここまで実装できたら
+
+- 各ページでメニューが表示され、画面遷移が正常にできることを確認してください。
 
 
 ## アイテム一覧の実装
 
 - アイテム一覧にItemsデータを定義して表示します。
-- `/pages/items/index.vue`を以下のように追加実装します。
-- 
+- `/pages/items/index.vue`を以下のように実装してください。
+- `v-for`で`items`を`item`として展開しています。
+- `router-link`の`to属性`に`id`を入れています。
 
 **/pages/items/index.vue**
 
 ```html
+<template>
+  <div>
+    <h1>Items</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in items" :key="item.id">
+          <td>{{item.id}}</td>
+          <td>
+            <router-link :to="'/items/' + item.id">{{item.name}}</router-link>
+          </td>
+          <td>{{item.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button>
+      <router-link to="/items/new">Add Item</router-link>
+    </button>
+  </div>
+</template>
 
+<script>
+export default {
+  data: function() {
+    return {
+      items: [
+        {
+          id: 1,
+          name: "apple",
+          price: 120
+        },
+        {
+          id: 2,
+          name: "banana",
+          price: 80
+        }
+      ]
+    };
+  }
+};
+</script>
 ```
+
+### ここまで実装できたら
+
+- アイテム一覧の各データの名前を押したときに、各詳細画面のURLに遷移することを確認してください。
+- 追加ボタンを押したときに、新規作成画面に遷移することを確認してください。
+
+
+## アイテム詳細の実装
+
+- 今回はルーターからidを取得して画面上に表示する実装をします。
+- 実際の開発では、idをもとにWebAPIを叩いて詳細データを取得するのが一般的です。
+- `/pages/items/_id.vue`を以下のように実装してください。
+- `data`の`function(){}`内の`this`でコンポーネントのインスタンスを取得できます。
+- `$route`オブジェクトがルーティングに関する情報です。
+
+**/pages/items/_id.vue**
+
+```html
+<template>
+  <div>
+    <h1>Items Id</h1>
+    <h2>{{id}}</h2>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      id: this.$route.params.id
+    };
+  }
+};
+</script>
+```
+
+### ここまで実装できたら
+
+- 詳細画面でidが表示できていることを確認してください。
+
+
+## 学習のポイント
+
+- [] aaa
+- [] bbb
+- [] ccc
