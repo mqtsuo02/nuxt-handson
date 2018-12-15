@@ -7,7 +7,8 @@
 
 ## Output
 
-![demo](./screen.gif)
+|![demo](./screen.gif)|
+|:---:|
 
 
 ## Contens
