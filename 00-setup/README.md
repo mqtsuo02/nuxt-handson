@@ -22,4 +22,4 @@
 ## シンタックスハイライトのプラグイン
 
 - VSCode: Vetur
-- Atom: language-vue-component
+- Atom: language-vue

@@ -1,0 +1,11 @@
+{
+  "name": "hello-nuxt",
+  "dependencies": {
+    "@nuxtjs/vuetify": "0.4.3",
+    "axios": "0.18.0",
+    "nuxt": "2.3.4"
+  },
+  "scripts": {
+    "start": "nuxt"
+  }
+}
