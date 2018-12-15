@@ -1,0 +1,9 @@
+{
+  "name": "api-mock",
+  "dependencies": {
+    "json-server": "^0.14.0"
+  },
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  }
+}

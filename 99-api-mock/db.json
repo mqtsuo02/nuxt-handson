@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "id": 1, "name": "Apple", "price": 120, "description": "An apple is a sweet, edible fruit produced by an apple tree." },
+    { "id": 2, "name": "Banana", "price": 80, "description": "A banana is an edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa." },
+    { "id": 3, "name": "Grape", "price": 320, "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis." },
+    { "id": 4, "name": "Peach", "price": 300, "description": "The peach is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated." },
+    { "id": 5, "name": "Melon", "price": 800, "description": "A melon is any of various plants of the family Cucurbitaceae with sweet edible, fleshy fruit." }
+  ]
+}
