@@ -7,7 +7,7 @@
 
 ## Output
 
-![gif画像]()
+![demo](./screen.gif)
 
 
 ## Contens
@@ -15,4 +15,6 @@
 - [00-setup](./00-setup/README.md)
 - [01-hello-nuxt](./01-hello-nuxt/README.md)
 - [02-routing](./02-routing/README.md)
-- [03-vuetify](./03-vuetify/README.md)
+- [03-api-connection](./03-api-connection/README.md)
+- [04-vuetify](./04-vuetify/README.md)
+- [99-api-mock](./99-api-mock/README.md)
