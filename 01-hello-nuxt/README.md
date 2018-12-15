@@ -42,6 +42,8 @@ $ cd hello-nuxt
 - 作業ディレクトリ直下に、`package.json`を作成し、以下の内容を書いて保存してください。
 - `npm start`で`node_modules/.bin/nuxt`が実行されるようにスクリプトを定義します。
 
+**/package.json**
+
 ```json
 {
   "name": "hello-nuxt",
@@ -107,6 +109,6 @@ $ npm start
 
 ## (再) 学習のポイント
 
-- [ ] aaa
-- [ ] bbb
-- [ ] ccc
+- [x] aaa
+- [x] bbb
+- [x] ccc
