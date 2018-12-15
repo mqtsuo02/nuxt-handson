@@ -1,27 +1,18 @@
 <template>
   <div>
     <h1>Items</h1>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>name</th>
-          <th>price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in items" :key="item.id">
-          <td>{{item.id}}</td>
-          <td>
-            <router-link :to="'/items/' + item.id">{{item.name}}</router-link>
-          </td>
-          <td>{{item.price}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <button>
-      <router-link to="/items/new">Add Item</router-link>
-    </button>
+    <v-data-table
+      :headers="headers"
+      :items="items"
+      hide-actions
+    >
+      <template slot="items" slot-scope="props">
+        <td>{{ props.item.id }}</td>
+        <td><router-link :to="'/items/' + props.item.id">{{ props.item.name }}</router-link></td>
+        <td>{{ props.item.price }}</td>
+      </template>
+    </v-data-table>
+    <v-btn color="success" @click="route('/items/new')">Add Item</v-btn>
   </div>
 </template>
 
@@ -31,12 +22,22 @@ import axios from 'axios'
 export default {
   data: function() {
     return {
-      items: []
+      items: [],
+      headers: [
+          { text: "id", sortable: false},
+          { text: "name", sortable: false},
+          { text: "price", sortable: false}
+        ],
     };
   },
   asyncData: async function () {
     const response = await axios.get("http://localhost:3001/items")
     return { items: response.data }
+  },
+  methods: {
+    route(url) {
+      this.$router.push(url)
+    }
   }
 };
 </script>
