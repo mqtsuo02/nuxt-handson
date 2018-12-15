@@ -1,0 +1,10 @@
+{
+  "name": "hello-nuxt",
+  "dependencies": {
+    "axios": "0.18.0",
+    "nuxt": "2.3.4"
+  },
+  "scripts": {
+    "start": "nuxt"
+  }
+}
