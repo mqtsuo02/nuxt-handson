@@ -1,5 +1,5 @@
 {
-  "name": "routing",
+  "name": "hello-nuxt",
   "dependencies": {
     "nuxt": "2.3.4"
   },
