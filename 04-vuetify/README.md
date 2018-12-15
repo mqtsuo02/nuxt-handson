@@ -1,4 +1,4 @@
-# 03-vuetify
+# 04-vuetify
 
 
 ## やること
@@ -6,19 +6,15 @@
 Vuetify.jsを使って、マテリアルデザインに適応したコンポーネントを実装しましょう。
 
 
-## 学習のポイント
-
-- [ ] aaa
-- [ ] bbb
-- [ ] ccc
-
-
 ## 手順
 
 `03-api-connection`で使用したプロジェクトに追加実装していきます。
 
-1. [](#)
-
+1. [Vuetify.jsの導入](#Vuetify.jsの導入)
+2. [Vuetify.jsの使い方](#Vuetify.jsの使い方)
+3. [基本レイアウトの実装](#基本レイアウトの実装)
+4. [Navigation drawerとToolbarの導入](#Navigation drawerとToolbarの導入)
+5. [チャレンジ](#チャレンジ)
 
 
 ## Vuetify.jsの導入
@@ -150,3 +146,12 @@ export default {
 };
 </script>
 ```
+
+
+## チャレンジ
+
+- Vuetify.jsのサイトを参照しながら、ページを装飾していきましょう。
+- サンプルコードでは以下のコンポーネントを使用しています。
+  - アイテム一覧：[Data table](https://vuetifyjs.com/ja/components/data-tables)
+  - アイテム新規作成：[Form](https://vuetifyjs.com/ja/components/forms)
+  - ボタン：[Button](https://vuetifyjs.com/ja/components/buttons)
