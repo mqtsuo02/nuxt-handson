@@ -57,6 +57,7 @@ Itemは以下のプロパティを持ちます。
 |id|Number|
 |name|String|
 |price|Number|
+|description|String|
 
 
 ## vueファイルの作成
@@ -222,7 +223,7 @@ export default {
 ## アイテム詳細の実装
 
 - 今回はルーターからidを取得して画面上に表示する実装をします。
-- 実際の開発では、idをもとにWebAPIを叩いて詳細データを取得するのが一般的です。
+- 実際の開発では、idをもとにWebAPIを叩いて詳細データを取得するのが一般的です。(`03-api-connection`で実装します)
 - `/pages/items/_id.vue`を以下のように実装してください。
 - `data`の`function(){}`内の`this`でコンポーネントのインスタンスを取得できます。
 - `$route`オブジェクトがルーティングに関する情報です。

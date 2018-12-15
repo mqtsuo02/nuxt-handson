@@ -32,12 +32,12 @@ export default {
       items: [
         {
           id: 1,
-          name: "apple",
+          name: "Apple",
           price: 120
         },
         {
           id: 2,
-          name: "banana",
+          name: "Banana",
           price: 80
         }
       ]
