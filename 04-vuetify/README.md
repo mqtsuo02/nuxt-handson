@@ -13,7 +13,7 @@ Vuetify.jsを使って、マテリアルデザインに適応したコンポー�
 1. [Vuetify.jsの導入](#Vuetify.jsの導入)
 2. [Vuetify.jsの使い方](#Vuetify.jsの使い方)
 3. [基本レイアウトの実装](#基本レイアウトの実装)
-4. [Navigation drawerとToolbarの導入](#Navigation drawerとToolbarの導入)
+4. [NavigationDrawerとToolbarの導入](#NavigationDrawerとToolbarの導入)
 5. [チャレンジ](#チャレンジ)
 
 
@@ -102,7 +102,7 @@ export default {
 ```
 
 
-## Navigation drawerとToolbarの導入
+## NavigationDrawerとToolbarの導入
 
 - [Toolbar](https://vuetifyjs.com/ja/components/toolbars)と[Navigation drawer](https://vuetifyjs.com/ja/components/navigation-drawers)を導入します。
 - `/components/MenuList.vue`を以下のように実装してください。
