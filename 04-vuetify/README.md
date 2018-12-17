@@ -44,6 +44,8 @@ Vuetify.jsを使って、マテリアルデザインに適応したコンポー�
 - `vuetify.theme`にカラーテーマを設定することができます。
 - 便利な[Theme generator](https://vuetifyjs.com/ja/theme-generator)が利用できます。
 
+**/nuxt.config.js**
+
 ```
 module.exports = {
   modules: ["@nuxtjs/vuetify"],
@@ -75,6 +77,8 @@ module.exports = {
 
 - [Pre-defined layouts](https://vuetifyjs.com/ja/layout/pre-defined)の`Default application markup`を参考にレイアウトを実装していきます。
 - 全体を`v-app`タグでラップし、`v-navigation-drawer`と`v-toolbar`については`menu-list`で実装することとします。
+
+**/layouts/default.vue**
 
 ```html
 <template>

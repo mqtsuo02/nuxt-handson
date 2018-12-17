@@ -126,7 +126,7 @@ export default {
 - `context.params`は`$route.params`のエイリアスになっています。
 - `template`は取得したデータを表示できるように追加実装しています。
 
-**/pages/items/index.vue**
+**/pages/items/_id.vue**
 
 ```html
 <template>
